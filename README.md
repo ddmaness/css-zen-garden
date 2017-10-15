@@ -1,6 +1,6 @@
 # **CSS-Zen-Garden**
 
-## Design inspired by South County Library in Roanoke, VA
+## Design inspired by South County Library in Roanoke, VA and Google's Material Design Concepts
 
 ### Key Design Features
 - clean lines and sharp corners, modern
