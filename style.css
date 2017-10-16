@@ -67,11 +67,13 @@ General Positioning
 
 div {
     margin-bottom: 16px;
+    box-sizing: border-box;
 }
 
 .main{
     display: inline-block;
     width: 70%;
+    padding-right: 16px;
 }
 
 .sidebar{
@@ -80,9 +82,28 @@ div {
 }
 
 
+/*
+==============================================
+
+Fonts
+
+==============================================
+*/
+
+p, li{
+    font: 16px/1.5em "Roboto", sans-serif;
+}
+
+h3 {
+    font: 100 24px/1.5 "Libre Franklin", sans-serif;
+    margin-bottom:8px;
+    padding-left:16px;
+}
 
 
+/*TEMPORARY FOR THE PURPOSES OF ASSISTING DESIGN*/
 
+/*
 div{
     border: 1px solid black;
 }
@@ -90,3 +111,4 @@ div{
 section {
     border: 1px solid black;
 }
+*/
