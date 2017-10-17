@@ -54,10 +54,46 @@ table {
 /*
 =============================================
 
+Background Color
+
+=============================================
+*/
+
+body {
+    background-color: #F8F5DD;
+    color: #666;
+}
+
+/*
+=============================================
+
 General Positioning
 
 =============================================
 */
+
+p {
+    margin-bottom: 16px;
+}
+
+div {
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.design-selection li,
+.sidebar h3{
+    text-align: center;
+}
+
+.designer-name {
+    display: block;
+}
+
+.designer-name {
+    margin-bottom: 16px;
+}
+
 .page-wrapper {
     max-width: 900px;
     margin: auto;
@@ -65,15 +101,10 @@ General Positioning
     flex-wrap: wrap;    
 }
 
-div {
-    margin-bottom: 16px;
-    box-sizing: border-box;
-}
-
 .main{
     display: inline-block;
     width: 70%;
-    padding-right: 16px;
+    padding-right: 24px;
 }
 
 .sidebar{
@@ -81,7 +112,48 @@ div {
     width: 29%;
 }
 
+.preamble h3 {
+    text-align: center;
+}
 
+/*
+==============================================
+
+Header
+
+==============================================
+*/
+.intro header {
+    display: inline-block;
+    width: 20%;
+    border-right: 4px double #CC3405;
+    margin-top: 48px;
+}
+
+.intro h1,
+.intro h2 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.intro h1 {
+    letter-spacing: -0.1em;
+    font-size: 56px;
+}
+
+.intro h2 {
+    font-size: 16px;
+}
+
+.summary {
+    padding-left: 16px;
+    display: inline-block;
+    width:78%;
+}
+
+.summary p:last-child {
+    font-size: 12px;
+    text-align: center;
+}
 /*
 ==============================================
 
@@ -95,20 +167,171 @@ p, li{
 }
 
 h3 {
+    display: inline-block;
+    width: 96%;
+    color:#CC3405;
     font: 100 24px/1.5 "Libre Franklin", sans-serif;
+    text-transform: uppercase;
     margin-bottom:8px;
-    padding-left:16px;
 }
 
+.main h3 {
+    padding-left:24px;
+}
 
-/*TEMPORARY FOR THE PURPOSES OF ASSISTING DESIGN*/
+.sidebar h3, 
+.main h3, 
+.preamble h3 {
+    border-bottom: 1px solid #CC3405;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.designer-name {
+    font-weight: 600;
+}
+.requirements {
+    width: 900px;
+}
+
+.requirements p:last-child {
+    margin-top: 32px;
+    
+}
+
+footer {
+    word-spacing: 3em;
+}
+
+footer,
+.requirements p:last-child{
+    font-size: 12px;
+}
 
 /*
-div{
-    border: 1px solid black;
+=============================================
+
+Links
+
+=============================================
+*/
+
+a {
+    text-decoration: none;
+    color: #CC3405;
 }
 
-section {
-    border: 1px solid black;
+a:hover {
+    text-decoration: underline;
 }
+
+/*
+============================================
+
+Responsive Design Queries
+
+============================================
 */
+
+@media screen and (max-width: 900px) {
+    .requirements {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 890px){
+    .intro header {
+        display: inline-block;
+        width: 30%;
+        border-right: 4px double #CC3405;
+        margin-top: 48px;
+    }
+    
+    .summary {
+        padding-left: 16px;
+        display: inline-block;
+        width:68%;
+    }
+    .preamble p,
+    .main p {
+        padding-left: 8px;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .main,
+    .requirements {
+        width:100%;
+        padding-right: 0;
+    }
+    
+    .preamble h3 {
+        width: 100%
+    }
+    
+    .main h3 {
+        padding-left:0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .explanation {
+        width: 100%;
+    }
+
+    .sidebar{
+        display: block;
+        width:100%;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .sidebar h3 {
+        font-size: 20px;
+    }
+    
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+        text-align: left;
+        display:inline-block;
+        width: 33%;
+    }
+    
+    .wrapper li,
+    .wrapper h3 {
+        padding-left: 8px;
+        text-align: left;
+    }
+    .wrapper h3 {
+        width: 100%
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .intro header {
+        width: 100%;
+        border-right: none;
+        border-bottom: 4px double #CC3405;
+        padding-bottom: 4px;
+        margin-bottom: 16px;
+    }
+    
+    .summary {
+        width:100%;
+    }
+    
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+        width: 100%;
+    }
+}
